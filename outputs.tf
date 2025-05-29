@@ -11,5 +11,5 @@ output "subnet_id" {
 }
 
 output "security_group_id" {
-  value = aws_security_group.ssh.id
+  value = module.optimus_network.sg_id
 }
