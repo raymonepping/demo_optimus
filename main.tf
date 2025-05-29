@@ -28,3 +28,15 @@ module "optimus_netbox" {
   asn_number   = var.asn_number 
 }
 
+module "optimus_network" {
+  source  = "app.terraform.io/optimus_prime/optimus/aws//modules/network"
+  version = "1.0.0"
+
+  # Required variables - replace with your actual values or variables
+  vpc_name             = var.vpc_name
+  vpc_cidr             = var.vpc_cidr
+  public_subnet_cidr   = var.public_subnet_cidr
+  sdn_dcgw_subnet_cidr = var.sdn_dcgw_subnet_cidr
+  az                   = var.az
+  project_name         = var.project_name
+}

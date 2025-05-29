@@ -1,3 +1,11 @@
 output "claimed_ips" {
   value = module.optimus_netbox.demo_secondary_ips
 }
+
+output "vpc_id" {
+  value = module.optimus_network.vpc_id
+}
+
+output "subnet_id" {
+  value = module.optimus_network.subnet_id
+}
