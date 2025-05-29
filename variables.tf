@@ -13,3 +13,9 @@ variable "netbox_prefix" {
   description = "Prefix CIDR to allocate IP from"
   type        = string
 }
+
+variable "asn_number" {
+  description = "ASN to fetch (optional, for PoC)"
+  type        = number
+  default     = null
+}

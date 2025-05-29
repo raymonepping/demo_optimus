@@ -25,6 +25,6 @@ module "optimus_netbox" {
   # insert required variables here
   netbox_url   = var.netbox_url
   netbox_token = var.netbox_token
-  
+  asn_number   = var.asn_number 
 }
 
