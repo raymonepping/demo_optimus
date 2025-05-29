@@ -1,3 +1,3 @@
-output "claimed_ip" {
-  value = module.optimus_netbox.allocated_ip
+output "claimed_ips" {
+  value = module.optimus_netbox.demo_secondary_ips
 }
