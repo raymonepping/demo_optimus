@@ -20,7 +20,7 @@ terraform {
 }
 
 module "optimus_netbox" {
-  source = "app.terraform.io/optimus_prime/optimus/AWS//modules/netbox"
+  source = "app.terraform.io/optimus_prime/optimus/aws//modules/netbox"
   version = "1.0.0"
 
   netbox_url   = var.netbox_url
