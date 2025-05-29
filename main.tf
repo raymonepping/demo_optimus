@@ -19,11 +19,12 @@ terraform {
   }
 }
 
-module "demo_netbox" {
-  source  = "app.terraform.io/optimus_prime/demo/aws//modules/netbox"
+module "optimus_netbox" {
+  source  = "app.terraform.io/optimus_prime/optimus/aws//modules/netbox"
   version = "1.0.0"
-
+  # insert required variables here
   netbox_url   = var.netbox_url
   netbox_token = var.netbox_token
   prefix       = var.netbox_prefix  
 }
+
