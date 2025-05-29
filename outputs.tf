@@ -9,3 +9,7 @@ output "vpc_id" {
 output "subnet_id" {
   value = module.optimus_network.subnet_id
 }
+
+output "security_group_id" {
+  value = aws_security_group.ssh.id
+}
