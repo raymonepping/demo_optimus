@@ -21,7 +21,7 @@ terraform {
 
 module "optimus_netbox" {
   source  = "app.terraform.io/optimus_prime/optimus/aws//modules/netbox"
-  version      = "1.0.0"
+  version      = "1.0.3"
   netbox_url   = var.netbox_url
   netbox_token = var.netbox_token
   asn_number   = var.asn_number 
@@ -29,7 +29,7 @@ module "optimus_netbox" {
 
 module "optimus_network" {
   source  = "app.terraform.io/optimus_prime/optimus/aws//modules/network"
-  version              = "1.0.0"
+  version              = "1.0.3"
   vpc_name             = var.vpc_name
   vpc_cidr             = var.vpc_cidr
   public_subnet_cidr   = var.public_subnet_cidr
@@ -40,7 +40,7 @@ module "optimus_network" {
 
 module "optimus_ipam" {
   source        = "app.terraform.io/optimus_prime/optimus/aws//modules/ipam"
-  version       = "1.0.0"
+  version       = "1.0.3"
   region        = var.region
   ipam_name     = var.ipam_name
   ipam_cidr     = var.ipam_cidr
