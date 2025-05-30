@@ -49,3 +49,18 @@ variable "project_name" {
   description = "Project name for tagging"
   type        = string
 }
+
+variable "region" {
+  description = "AWS region to deploy into"
+  type        = string
+}
+
+variable "ipam_name" {
+  description = "Name for IPAM"
+  type        = string
+}
+
+variable "ipam_cidr" {
+  description = "CIDR block for IPAM root pool"
+  type        = string
+}
