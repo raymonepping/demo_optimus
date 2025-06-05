@@ -1,26 +1,34 @@
-# demo_optimus
+# demo_doubledealer
 
-Main Terraform configuration for demos and PoCs, using reusable modules from [`terraform-AWS-optimus`](https://github.com/raymonepping/terraform-AWS-optimus).
+Terraform project to provision AWS,VAULT,TFE infrastructure.
 
----
+## Requirements
 
-## Overview
-
-This repository contains the primary Terraform code to deploy and manage demo infrastructure. All core AWS modules (VPC, IPAM, NetBox integration, etc.) are referenced as remote modules from [`terraform-AWS-optimus`](https://github.com/raymonepping/terraform-AWS-optimus).
-
----
-
-## Structure
-
-- `main.tf` – Root configuration, module sources, backend, and providers
-- `variables.tf` – Input variable definitions
-- `outputs.tf` – Key deployment outputs
-
----
+- Terraform >= 1.3
+- GitHub CLI (gh)
+- terraform-docs (optional)
 
 ## Usage
 
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/raymonepping/demo_optimus.git
-   cd demo_optimus
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+
+## Structure
+
+```
+.
+├── main.tf
+├── provider.tf
+├── variables.tf
+├── outputs.tf
+├── backend.tf
+├── versions.tf
+├── data.tf
+├── locals.tf
+└── modules/
+    ├── compute/
+    └── network/
+```
